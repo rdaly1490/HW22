@@ -7,17 +7,17 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
-			<div class="container-fluid">
+			<div class="container-fluid" id="slidedown-container">
 				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="slidedown">
 				<span class="glyphicon glyphicon-plus-sign"></span>
 				</button>
 				<div class="collapse" id="collapseExample">
 					<div class="well">
-						<form class="col-xs-12" id="img-form">
+						<form class="col-xs-12 col-sm-12 col-md-12" id="img-form">
 							<h5>URL</h5>
-							<input type="text" id="url" class="col-xs-10 col-xs-offset-1">
+							<input type="text" id="url" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
 							<h5>Caption</h5>
-							<input type="text" id="img-caption" class="col-xs-10 col-xs-offset-1">
+							<input type="text" id="img-caption" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
 							<button type="submit" id="submit-img"><span class="glyphicon glyphicon-camera"></span> Add Image</button>
 							<button type="submit" id="cancel">Cancel</button>
 						</form>
@@ -26,7 +26,7 @@
 			</div>
 		</nav>
 
-		<div class="container-fluid well col-xs-12" id="pics-container">
+		<div class="container-fluid well col-xs-12 col-sm-12 col-md-8 col-md-offset-2" id="pics-container">
 				<div class="col-xs-12" id="pics">
 				</div>
 		</div>
@@ -34,8 +34,8 @@
 
 
 			<script type="text/template" id="post-template">
-				<div class="col-xs-10 col-xs-offset-1 post">
-					<img src="<%= imgUrl %>" class="img-responsive">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md -offset-1 post">
+					<img src="<%= imgUrl %>">
 					<div><p><%= caption %></p></div>
 				</div>
 			</script>

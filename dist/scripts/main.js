@@ -2,6 +2,8 @@ $(document).ready(function() {
 
 	var imgList = new ImgCollection();
 
+	imgList.fetch();
+
 	var imgPostBuilder = _.template($("#post-template").html());
 
 
@@ -15,6 +17,8 @@ $(document).ready(function() {
 
 		if(newImg.isValid()) {
 			imgList.add(newImg);
+			newImg.save();
+			$("#collapseExample").removeClass("in");
 		}
 		else {
 			alert(newImg.validationError);

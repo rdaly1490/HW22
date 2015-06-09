@@ -16,5 +16,7 @@ var Img= Backbone.Model.extend ({
 		else {
 			return false;
 		}
-	}
+	},
+	urlRoot:"http://tiny-pizza-server.herokuapp.com/collections/robdaly",
+	idAttribute: "_id"
 });
