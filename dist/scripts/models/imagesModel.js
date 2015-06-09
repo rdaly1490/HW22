@@ -7,7 +7,7 @@ var Img= Backbone.Model.extend ({
 		if(attr.imgUrl.length === 0) {
 			return "Image URL cannot be left blank!";
 		}
-		else if(!(validator.contains(attr.imgUrl, "http:"))) {
+		else if(!(validator.contains(attr.imgUrl, "http"))) {
 			return "Invalid URL format"
 		}
 		else if (attr.caption.length === 0) {

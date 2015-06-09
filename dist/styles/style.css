@@ -33,16 +33,12 @@
 
 .well button {
 	float:right;
-	/*font-weight: bold;*/
 	font-size: 15px;
 	margin-left: 15px;
 	height:40px;
 	border-radius: 5px;
 	color:white;
 	font-size: 10px;
-/*	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);*/
 }
 
 .well button span {
