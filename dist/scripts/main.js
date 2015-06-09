@@ -28,19 +28,11 @@ $(document).ready(function() {
 	imgList.on("add", function(imgModel) {
 		var displayPost = imgPostBuilder(imgModel.attributes);
 		$("#pics-container").append(displayPost);
-	})
+	});
 
 	$("#cancel").on("click", function(e) {
 		e.preventDefault();
 		$("#collapseExample").removeClass("in");
-	})
+	});
 
-
-
-
-
-
-
-
-
-})
+});
