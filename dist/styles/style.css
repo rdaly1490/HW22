@@ -6,6 +6,7 @@
 #slidedown {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-left: 10%;
 	font-size: 25px;
 	color:#082238;
 	background-color: #527299;
@@ -54,14 +55,21 @@
 
 .post div {
 	min-height: 100px;
-	border: 1px solid black;
+	border: 1px solid gray;
 	font-size: 20px;
 	line-height:100px;
 	vertical-align: middle;
-	padding-left: 20px;
 	color:gray;
+}
+
+.post div p {
+	margin-left: 10%;
 }
 
 .post {
 	margin-top: 20px;
+}
+
+img {
+	border:1px solid gray;
 }

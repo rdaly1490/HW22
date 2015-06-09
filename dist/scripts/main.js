@@ -7,7 +7,6 @@ $(document).ready(function() {
 
 	$("#submit-img").on("click", function(e){
 		e.preventDefault();
-		// console.log("test");
 
 		var newImg = new Img({
 			imgUrl: $("#url").val(),
@@ -16,8 +15,6 @@ $(document).ready(function() {
 
 		if(newImg.isValid()) {
 			imgList.add(newImg);
-			console.log(imgList);
-			// console.log(newImg);
 		}
 		else {
 			alert(newImg.validationError);
@@ -26,14 +23,12 @@ $(document).ready(function() {
 
 	imgList.on("add", function(imgModel) {
 		var displayPost = imgPostBuilder(imgModel.attributes);
-		console.log(displayPost);
 		$("#pics-container").append(displayPost);
 	})
 
 	$("#cancel").on("click", function(e) {
 		e.preventDefault();
-		console.log("works");
-		$(".btn .btn-primary").addClass("collapsed");
+		$("#collapseExample").removeClass("in");
 	})
 
 
