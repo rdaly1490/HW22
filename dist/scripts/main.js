@@ -36,3 +36,14 @@ $(document).ready(function() {
 	});
 
 });
+
+// imgList.fetch({
+// 	success: function(imageObj) {
+// 		imageObj.forEach(function(model)) {
+// 			$("#pics-container").append(imgPostBuilder(imgModel.attributes))
+// 		});
+// 		imageObj.on("add", function(e) {
+// 			$("#pics-container").prepend(imgPostBuilder(imgModel.attributes))
+// 		});
+// 	}
+// });
